@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://sprites/TestUnit2.png" type="Texture" id=1]
+[ext_resource path="res://scripts/UnitController.gd" type="Script" id=2]
+
+[node name="Unit" type="Spatial"]
+script = ExtResource( 2 )
+
+[node name="Rig" type="Sprite3D" parent="."]
+offset = Vector2( 0, 69 )
+pixel_size = 0.02
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )

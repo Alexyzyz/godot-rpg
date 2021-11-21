@@ -1,0 +1,47 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://fonts/dynamic_font/CardFont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://sprites/TestUnit2.png" type="Texture" id=2]
+[ext_resource path="res://scripts/CardController.gd" type="Script" id=3]
+
+[node name="Card" type="ColorRect"]
+margin_right = 100.0
+margin_bottom = 130.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 5.52972
+margin_top = 5.0
+margin_right = 95.5297
+margin_bottom = 35.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Walk"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="Label"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 17.5762
+margin_top = -1.77962
+margin_right = 101.576
+margin_bottom = 136.22
+rect_scale = Vector2( 0.727211, 0.624602 )
+mouse_filter = 2
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tween" type="Tween" parent="."]
+
+[connection signal="mouse_entered" from="." to="." method="_on_Card_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_Card_mouse_exited"]

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/battle_critical_raw.ogg-a0fca68bf7b2d89098320eee39d33bdb.oggstr"
+
+[deps]
+
+source_file="res://audio/music/battle_critical_raw.ogg"
+dest_files=[ "res://.import/battle_critical_raw.ogg-a0fca68bf7b2d89098320eee39d33bdb.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
